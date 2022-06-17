@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./Registration-form/images/bg-intro-desktop.png), hsl(0, 100%, 74%) ;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+}
+p,h1,small{
+    font-family: 'Poppins';
+    color: #fff;
+}
+h1{
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+}
+.text{
+    width: 32em;
+    margin-right: 50px;
+}
+form{
+    background: #fff;
+    width: 28em;
+    height: auto;
+    padding: 16px;
+}
+fieldset{
+    border: none;
+}
+label{
+    display: block;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    min-height: 3em;
+    margin-bottom: 15px;
+    width: 80%;
+}
+small{
+    color: hsl(246, 25%, 77%);
+}
