@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+/* varaibles */
+:root{
+    --Pink_primary: hsl(322, 100%, 66%);
+    --VeryPaleCyan_neutral : hsl(192, 100%, 96%);
+    --VeryDarkCyan_nutral: hsl(192, 100%, 9%);
+    --GrayishBlue_neutral: hsl(208, 11%, 55%);
+    --Fontsize_Body: 18px;
+    --font-family_heading: 'Poppins';
+    --font-weights_heading: 600;
+    --font-family_bodycta: 'Open Sans';
+    --font-weights_bodycta: 400;
+
+}
+
+
+*::before,*::after,*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+section:not(.no-bg,.footer){
+    background: url(./Huddle-landing-page-Design/images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    height: 100vw;
+    height: 100vh;
+    padding-top: 1px;
+}
+.container{
+    width: 90vw;
+    margin: 50px auto;
+    min-width: 80vw;
+}
+.hero{
+    display: flex;
+    margin: 70px 0;
+    justify-content: space-between;
+    width: 100%;
+}
+.illust{
+    width: 100%;
+}
+.image{
+    width: 55%;
+    margin-left: 1em;
+}
+.message{
+    position: relative;
+    width: 40%;
+}
+.center h1,.less div h1{
+    font-family: var(--font-family_heading);
+    font-weight: var(--font-weights_heading);
+    font-size: 48px;
+    color: var(--VeryDarkCyan_nutral);
+    /* text-align: center; */
+}
+.center p{
+    font-family: var(--font-family_bodycta);
+    font-weight: var(--font-weights_bodycta);
+    font-size: var(--Fontsize_Body);
+    color: var(--VeryDarkCyan_nutral);
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    opacity: 0.8;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+button{
+    font-family: var(--font-family_bodycta);
+    font-weight: 700;
+    cursor: pointer;
+}
+header button{
+    width: 12em;
+    height: auto;
+    border-radius: 35px;
+    border: none;
+    background:var(--VeryPaleCyan_neutral);
+    transition: all 0.5s;
+}
+header button:hover{
+    box-shadow: 1px 3px 10px rgb(226, 226, 226);
+    transition: all 0.5s;
+}
+.center button,
+.less div button{
+    width: 15em;
+    height: 50px;
+    border-radius: 35px;
+    background: var(--Pink_primary);
+    padding: 12px;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.center button:hover{
+    box-shadow: 0px 3px 10px rgb(226, 226, 226);
+    transition: all 0.5s;
+}
+
+.user-body{
+    margin: 0 calc(50vw - 61.1%);
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+}
+.items{
+    margin: 50px auto;
+}
+.down-div{
+    height: 300px;
+    width: 90vw;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 8em 20px 10em;
+
+}
+.no-bg{
+    border-top: 1px solid rgb(152, 228, 252);
+    padding: 1em;
+    position: relative;
+}
+.down-div:first-child{
+    margin-top: 6em;
+}
+.img{
+    width: 20em;
+    height: 250px;
+    background: #fff;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-top: 10px;
+}
+.centered h1{
+    font-family: var(--font-family_heading);
+    font-weight: var(--font-weights_heading);
+    font-size: 30px;
+    color: var(--VeryDarkCyan_nutral);
+}
+
+.centered p{
+    font-family: var(--font-family_bodycta);
+    font-weight: var(--font-weights_bodycta);
+    font-size: var(--Fontsize_Body);
+    color: var(--VeryDarkCyan_nutral);
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    opacity: 0.8;
+}
+.main{
+    margin-bottom: 300px;
+}
+
+.footer{
+    background: var(--VeryDarkCyan_nutral);
+    bottom: 0;
+    left: 0;
+    padding: 50px;
+    font-size: 16px;
+    font-family: var(--font-family_bodycta);
+    color: var(--VeryPaleCyan_neutral);
+}
+.bod{
+    width: 160px;
+    height: 24px;
+}
+section .marg{
+    margin-top: 120px;
+    margin-bottom: 28px;
+}
+
+.inline{
+    display: inline;
+}
+.text{
+    width: 20em;
+}
+
+.size{
+    width: 75vw;
+}
+.right{
+    float: right;
+    font-size: 14px;;
+}
+.mb-2{
+    margin-bottom: 20px;
+}
+.mr-1{
+    margin-right: 10px;
+}
+.mr-2{
+    margin-right: 20px;
+}
+.less{
+    position: absolute;
+    height: 250px;
+    width: 50vw;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+    border-radius: 10px;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    padding: 30px;
+}
+.less div {
+    margin-top: 20px;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.less div h1{
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+.less div button{
+    height: 60px;
+    width: 20em;
+    transition: all 0.5s;
+    /* margin: 0 auto; */
+}
+.less div button:hover{
+    box-shadow: 0px 3px 10px rgb(226, 226, 226);
+    transition: all 0.5s;
+}
+.icon-fb{
+    background: url(./Huddle-landing-page-Design/images/facebook.svg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.icon {
+    display: inline-block;
+    width: 25pt;
+    height: 25pt;
+}
+.icon-twi{
+    background: url(./Huddle-landing-page-Design/images/twitter.svg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.icon-ins{
+    background: url(./Huddle-landing-page-Design/images/instagram.svg);
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.icon-fb:focus,.icon-fb:hover{
+    background: url(./Huddle-landing-page-Design/images/facebook-1.svg);
+    background-size: cover;
+    transition: all 0.2s;
+}
+.icon-twi:focus,
+.icon-twi:hover{
+    background: url(./Huddle-landing-page-Design/images/twitter-1.svg);
+    background-size: cover;
+    transition: all 0.2s;
+}
+.icon-ins:focus,
+.icon-ins:hover{
+    background: url(./Huddle-landing-page-Design/images/instagram-1.svg);
+    background-size: cover;
+    transition: all 0.2s;
+}
+.divider{
+    background: var(--VeryPaleCyan_neutral);
+    height: 1px;
+    margin: 20px 0px;
+}
